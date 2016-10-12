@@ -1,0 +1,32 @@
+/*default font(s)*/
+.snipcart-overwrite .snip-layout {
+  font-family: var(--root-font-family);
+}
+
+/*manage link fonts*/
+.snipcart-overwrite .snip-layout .snip-layout__close:hover, .snipcart-overwrite .snip-layout .snip-product__remove:hover {
+  background-color: transparent;
+}
+
+.snipcart-overwrite .snip-layout .snip-layout__close:hover  .snip-ico {
+  color: var(--primary-root-color-two);
+}
+
+/*change the header color style*/
+.snipcart-overwrite .snip-layout .snip-header {
+  background: var(--primary-root-color-one);
+}
+
+/*make cart total bg darker to create standout*/
+.snipcart-overwrite .snip-layout .snip-header__total {
+  background: var(--root-background-color); 
+}
+/*footer background color*/
+.snipcart-overwrite .snip-layout .snip-footer {
+  background: var(--root-background-color);
+}
+
+/*change step icons to numbers*/
+.snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number {
+    font-family: Verdana, sans-serif;
+}

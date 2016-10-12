@@ -1,0 +1,24 @@
+id = "1"
+title = "Kurvy Striped V-Kneck!"
+description = "Get these striped, v-knecked t-shirts available in black and purple, black and red, striped coral and the stunning aquamarine today!"
+brand_id = "kurvykitten"
+featured = "http://placehold.it/375x495"
+alternate = ""
+logo_color = "red"
+featured_path = ""
+pdateadded = "2015-10-09T15:29:09Z"
+price = "25"
+product_color = ["white","gray","blue"]
+product_size = [
+"X-Small",
+"Small",
+"Medium",
+"Large",
+"X-Large"
+]
+url = "/"
+weight = ""
+
+[product_color_images]
+  white = "http://placehold.it/375x495"
+  gray = "http://placehold.it/330x508"

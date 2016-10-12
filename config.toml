@@ -1,0 +1,42 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Walkroyale Clothing Boutique"
+theme = "wr_2016"
+
+[params]
+  brand_id = "brand" # brand name lowercase, no spaces, no special characters
+  featured = false
+  gender = "gender"
+  logo = "logo"
+  name = "brand name"
+  price = "price"
+  tagline   = "We are all Kings and Queens. Be that daily."
+  wordmark  = "Walk Royale Clothing"
+
+[params.intro]
+  about     = "We are the conglomerate company of: Rentabigman &  Kurvy Kitten clothing lines. We provide high quality apparel for the plus sized individual. Our sizes go up to 6XL for men and 3XL for women."
+
+# Set up your menu items in the navigation bar
+# You can use pre to prepend a font awesome icon to your text
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 2
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Cart"
+  url = "#"
+  weight = 3
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+  # quantity = "quantities"
+  # size = "sizes"
+  # color = "colors"
+  # logo_color = "logo_colors"

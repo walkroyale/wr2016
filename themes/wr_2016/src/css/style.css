@@ -1,0 +1,102 @@
+/*!  
+=================================
+Website by RJ Lewis 
+Created 2016-08-19
+Last updated 2016-08-22
+=================================
+*/
+/*
+=================================
+- Build: /Users/justrjlewis/source/0-dev/sites/walkroyale/themes/wr_2016/src/css
+- Fonts: https://fonts.google.com/?selection.family=Mr+De+Haviland|Source+Sans+Pro:400,700|Ubuntu+Condensed&query=conden
+=================================
+Contents:
+  01  Settings
+      - Global......Globally available variables and settings/config
+      - Colors......Manage theme specific color palette
+      - Queries.....Other media queries
+      - Responsive..Set up breakpoints
+  02  Tools
+      - Mixins......Global Mixins
+      - Grid........Grid Settings
+  03  Ground Zero | Generic Styles
+      - Sanitize...Sane browser defaults and variable fallbacks
+  04  Base: 
+      - Page........Page-level styles
+      - Headings....Heading styles
+      - Type........Miscellaneous element styles
+      - Links.......Hyperlink styles
+      - Lists.......List styles
+      - Images......Image defaults
+      - Quotes......Styling for blockquotes, etc.
+  05  Components
+      - Page Header.Global header styles
+      - Page Body...Main body styles (page types)
+      - Page Footer.Global footer styles
+      - Site Nav....Main navigation
+      - Bands.......Full width page bands
+      - List Styles.Mostly styling for printed collection lists
+      - Buttons.....Button styles
+      - Boxes.......Box styles
+  06  Trumps
+      - Responsive..Grid helper classes
+      - Modify......Modifyer Classes
+=================================
+*/
+
+/*@import settings*/
+  @import 'partials/_settings.global';
+  /*@import 'partials/_settings.colors';*/
+  /*@import 'partials/_settings.responsive';*/
+  @import 'partials/_settings.queries';
+
+/*@import tools*/
+  @import 'partials/_tools.mixins';
+
+/*@import generic*/
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/4.1.0/sanitize.css';
+  @import 'partials/_generic.sanitize';
+   
+/*@import base*/
+  @import 'partials/_elements.page';
+  @import 'partials/_elements.headings';
+  @import 'partials/_elements.hr';
+  /*@import 'partials/_elements.type';*/ 
+  @import 'partials/_elements.links';
+  @import 'partials/_elements.lists';
+  @import 'partials/_elements.images';
+  @import 'partials/_elements.blockquote';
+
+/*@import objects*/
+  /*@import 'partials/_objects.grid';*/
+  /*@import 'partials/_objects.flag';*/
+  /*@import 'partials/_objects.form';*/
+  /*@import 'partials/_objects.article';*/
+  @import 'partials/_objects.media';
+
+
+/*@import components*/
+  /*@import 'partials/_components.bands';*/
+  @import 'partials/_components.buttons';
+  @import 'partials/_components.cart';
+  @import 'partials/_components.islands';
+  /*@import 'partials/_components.masthead';*/
+  /*@import 'partials/_components.article';*/
+  /*@import 'partials/_components.page-foot';*/
+  /*@import 'partials/_components.featured-image';*/
+  /*@import 'partials/_components.page-head';*/
+  /*@import 'partials/_components.page-body';*/
+  @import 'partials/_components.layout';
+  @import 'partials/_components.logo';
+  /*@import 'partials/_components.list-style';*/
+  /*@import 'partials/_components.slicknav';*/
+  @import 'partials/_components.site-nav';
+  @import 'partials/_components.products';
+  /*@import 'partials/_components.taxonomies';*/
+  @import 'partials/_components.waffle';
+
+/*@import trumps*/
+  /*@import 'partials/_trumps.modify';*/
+  /*@import 'partials/_trumps.responsive';*/
+  /*@import 'partials/_trumps.twitter';*/
+  @import 'partials/_trumps.utilities';

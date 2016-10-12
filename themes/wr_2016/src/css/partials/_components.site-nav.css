@@ -1,0 +1,23 @@
+.o-nav {
+  lost-column: 1;
+  padding: 0.25rem;
+}
+.menubar__item {
+  display: inline-block;
+  margin-right: 2px;
+  &:last {
+    margin-right: 0; 
+  }
+}
+.menubar__item-target {
+  background-color: var(--primary-root-color-one);
+  border-bottom: 0;
+  display: block;
+  padding: 4px 10px;
+}
+.menubar__item-target:hover {
+  border-bottom: 0;
+}
+.menubar__item-target .snipcart-summary, .menubar__item-target .snipcart-total-items {
+  color: rgba(255, 236, 134, .5);
+}

@@ -1,0 +1,33 @@
+.o-island {
+
+}
+.c-site-info {
+  margin-bottom: var(--spacing-unit--lg);
+  margin-top: var(--spacing-unit--lg);
+}
+.o-section-heading {
+  border-bottom: 1px solid rgba(247, 247, 247, 1);
+  font-size: responsive .75rem 1rem;
+}
+.t-brand-heading {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  & a {
+    background-color: var(--primary-root-color-one);
+    border: 0;
+    color: var(--primary-root-color-three);
+    font-size: responsive .75rem 1.3rem;
+    padding: .625rem;
+  }
+}
+.t-brand-grid:hover {
+  & h3 a {
+    background-color: rgba(245, 207, 46, 1);
+  }
+}
+.t-tagline {
+  font-size: responsive 1rem 1.25rem;
+  text-align: center;
+}

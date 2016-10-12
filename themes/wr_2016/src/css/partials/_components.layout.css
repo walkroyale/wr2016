@@ -1,0 +1,28 @@
+.page__head {
+  lost-column: 1;
+  padding: 1rem;
+  @media (--medium) {
+    lost-column: 1/3;
+    padding: 0.625rem;
+  }
+}
+.page__body {
+  lost-column: 1;
+  padding: 0.625rem;
+  @media (--medium) {
+    lost-column: 2/3 2;
+    padding: 0.625rem;
+  }
+}
+.o-waffle-grid div {
+  lost-column: 1/2;
+  padding: 0.625rem;
+}
+footer {
+  lost-column: 1;
+  padding: 1rem;
+  @media (--medium) {
+    lost-column: 1/3 2;
+    padding: 1.1rem;
+  }
+}

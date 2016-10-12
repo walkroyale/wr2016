@@ -1,0 +1,24 @@
+id = "2"
+title = "Striped Coral V-Kneck Logo Shirt"
+description = "Kurvy Kitten Striped Coral Logo Shirt"
+brand_id = "kurvykitten"
+featured = "http://placehold.it/375x495"
+alternate = ""
+logo_color = "red"
+featured_path = ""
+pdateadded = "2015-10-17T15:13:12Z"
+price = "25"
+product_color = ["white","gray","blue"]
+product_size = [
+"X-Small",
+"Small",
+"Medium",
+"Large",
+"X-Large"
+]
+url = "/"
+weight = ""
+
+[product_color_images]
+  white = "http://placehold.it/330x508"
+  gray = "http://placehold.it/330x508"

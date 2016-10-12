@@ -1,0 +1,26 @@
+ul:not(.o-list, .o-list--bare, .menubar, .snip-steps), ol:not(.o-list) {
+  list-style-position: inside;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+  @nest ul, ol & {
+    margin-left: 1rem;
+  }
+  & li {
+    margin-bottom: .5rem;
+    & p {
+      margin-bottom: .5rem;
+    }
+  }
+}
+.o-list {
+  margin-left: 0;
+  &__inline li {
+    display: inline-block;
+  }
+}
+.o-list--bare {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

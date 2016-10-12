@@ -1,0 +1,7 @@
+/* specify the background color, font color, and drop shadow of text selections */
+
+::selection {
+  background-color: var(--selection-background-color); /* required when declaring ::selection */
+  color: var(--selection-color);
+  text-shadow: var(--selection-text-shadow, none);
+}

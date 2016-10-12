@@ -1,0 +1,16 @@
+.o-media {
+  lost-utility: clearfix;
+  display: block;
+}
+.c-media__image {
+  lost-column: 2/5;
+  &--overlay {
+    lost-column: 1;
+  }
+}
+.c-media__body {
+  lost-column: 3/5;
+  &--overlay {
+    lost-column: 1;
+  }
+}
