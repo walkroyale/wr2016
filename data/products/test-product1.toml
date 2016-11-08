@@ -1,20 +1,24 @@
 id = "1"
-title = "Kurvy Striped V-Kneck!"
-description = "Get these striped, v-knecked t-shirts available in black and purple, black and red, striped coral and the stunning aquamarine today!"
+active = "true"
+title = "Kurvy Kitten Hoodie"
+description = ""
 brand_id = "kurvykitten"
-featured = "http://placehold.it/375x495"
-alternate = ""
+featured = "true"
+product_images = ["/img/products/kk-hoodie/hoodie-white-orng-wht.jpg","/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg","/img/products/kk-hoodie/hoodie-white-red-blackr.jpg","/img/thumb-1.jpg","/img/thumb-2.jpg"]
+image_captions = ["White, Orange & White Hoodie","White, Purple & Silver Hoodie","White, Red & Black Hoodie"]
 logo_color = "red"
 featured_path = ""
 pdateadded = "2015-10-09T15:29:09Z"
-price = "25"
-product_color = ["white","gray","blue"]
+price = "40"
+product_color = ["Orange, Blue & White","Purple, Silver, & White","Red, Black & White"]
 product_size = [
-"X-Small",
 "Small",
 "Medium",
 "Large",
-"X-Large"
+"X-Large",
+"2X-Large",
+"3X-Large",
+"4X-Large"
 ]
 url = "/"
 weight = ""
