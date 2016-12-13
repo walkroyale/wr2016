@@ -1,14 +1,16 @@
 id = "2"
 title = "Striped Coral V-Kneck Logo Shirt"
-description = "Kurvy Kitten Striped Coral Logo Shirt"
+description = """Kurvy Kitten Striped Coral Logo Shirt
+Get these striped, v-knecked t-shirts available in black and purple, black and red, striped coral and the stunning aquamarine today!"""
 brand_id = "kurvykitten"
 featured = "http://placehold.it/375x495"
 alternate = ""
-logo_color = "red"
+logo_color = ["red"]
 featured_path = ""
 pdateadded = "2015-10-17T15:13:12Z"
 price = "25"
 product_color = ["white","gray","blue"]
+product_image = "http://placehold.it/375x495"
 product_size = [
 "X-Small",
 "Small",
@@ -19,6 +21,23 @@ product_size = [
 url = "/"
 weight = ""
 
-[product_color_images]
-  white = "http://placehold.it/330x508"
-  gray = "http://placehold.it/330x508"
+[color]
+[[color.logo]]
+name = "Pink"
+cid = "pink"
+images = "http://placehold.it/330x508"
+
+[[color.logo]]
+name = "Gray"
+cid = "gray"
+images ="http://placehold.it/330x508"
+
+[[color.logo]]
+name = "White"
+cid = "white"
+images = "http://placehold.it/330x508"
+
+[[color.product]]
+name = "White"
+cid = "white"
+images = ""

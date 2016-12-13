@@ -1,0 +1,15 @@
+input, textarea, .select select {
+  background: #fff;
+  border-radius: .1em;
+  border: 1px solid #ccc;
+  color: rgba(138, 138, 138, 1);
+  height: 2.1em;
+  line-height: 1.5;
+  margin: 0;
+  padding: .3em .6em;
+  transition: all 0.3s;
+  width: 100%; 
+}
+label {
+  font-size: responsive .85rem .95rem;
+}

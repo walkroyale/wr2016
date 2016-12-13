@@ -4,7 +4,33 @@ description = """RABM Striped Coral Logo Shirt"""
 brand_id = "rentabigman"
 featured = "http://placehold.it/330x508"
 featured_path = ""
+alternate = ""
+logo_color = ["red"]
 pdateadded = "2016-07-17T15:13:12Z"
-price = "15"
+price = "25"
+product_color = ["white","gray","blue"]
+product_size = [
+"X-Small",
+"Small",
+"Medium",
+"Large",
+"X-Large"
+]
 url = "/"
 weight = ""
+
+[color]
+[[color.logo]]
+name = "blue"
+cid = "blue"
+images = "http://placehold.it/330x508"
+
+[[color.logo]]
+name = "Green"
+cid = "green"
+images ="http://placehold.it/330x508"
+
+[[color.product]]
+name = "Black"
+cid = "black"
+images = ""

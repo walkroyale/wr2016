@@ -1,16 +1,12 @@
 id = "1"
 active = "true"
 title = "Kurvy Kitten Hoodie"
-description = ""
+description = "These white hoodies are just in time for winter.  In sizes up to 4XL, choose your favorite of our best selling logo colors today!"
 brand_id = "kurvykitten"
-featured = "true"
-product_images = ["/img/products/kk-hoodie/hoodie-white-orng-wht.jpg","/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg","/img/products/kk-hoodie/hoodie-white-red-blackr.jpg","/img/thumb-1.jpg","/img/thumb-2.jpg"]
-image_captions = ["White, Orange & White Hoodie","White, Purple & Silver Hoodie","White, Red & Black Hoodie"]
-logo_color = "red"
-featured_path = ""
 pdateadded = "2015-10-09T15:29:09Z"
 price = "40"
-product_color = ["Orange, Blue & White","Purple, Silver, & White","Red, Black & White"]
+product_image = "/img/products/kk-hoodie/hoodie-white-orng-wht.jpg"
+product_images = ["/img/products/kk-hoodie/hoodie-white-orng-wht.jpg","/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg","/img/products/kk-hoodie/hoodie-white-red-blackr.jpg","/img/thumb-1.jpg","/img/thumb-2.jpg"]
 product_size = [
 "Small",
 "Medium",
@@ -23,6 +19,26 @@ product_size = [
 url = "/"
 weight = ""
 
-[product_color_images]
-  white = "http://placehold.it/375x495"
-  gray = "http://placehold.it/330x508"
+[color]
+[[color.logo]]
+name = "Orange & Blue"
+cid = "orangeblue"
+images = "/img/products/kk-hoodie/hoodie-white-orng-wht.jpg"
+
+[[color.logo]]
+name = "Silver & Purple"
+cid = "silverpurple"
+images ="/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg"
+
+[[color.logo]]
+name = "Black & Red"
+cid = "blackred"
+images = "/img/products/kk-hoodie/hoodie-white-red-blackr.jpg"
+
+[[color.product]]
+name = "White"
+cid = "white"
+images = ""
+
+# image_captions = ["White, Orange & White Hoodie","White, Purple & Silver Hoodie","White, Red & Black Hoodie","Test 1","Test 2"]
+# logo_color = ["orangeblue","silverpurple","blackred"]
