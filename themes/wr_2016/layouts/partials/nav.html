@@ -1,0 +1,10 @@
+<ul class="menubar">
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.main }}
+    <li class="menubar__item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} current{{end}}">
+      <a class="menubar__item-target{{ if eq .Name "Cart" }} snipcart-checkout{{end}}" href="{{.URL}}">
+        {{ .Pre }}<span>{{ .Name }}{{ if eq .Name "Cart" }} <span class="snipcart-summary">(<span class="snipcart-total-items"></span>)</span>{{end}}</span>
+      </a>
+    </li>
+  {{ end }}
+</ul>

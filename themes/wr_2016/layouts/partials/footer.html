@@ -1,0 +1,53 @@
+<footer>
+<!-- About -->
+  {{ with .Site.Params.intro.about }}
+    <section class="c-site-info">
+      <h2 class="o-section-heading subheading">About</h2>
+      <p>{{ . }}</p>
+
+      <ul class="o-list--bare u-align-right@lg u-space-30">
+        <li class="button__bg-solid"><a href="/about" class="">Learn More</a></li>
+      </ul>
+    </section>
+  {{ end }}
+  <small>
+    <div class="copyright footer__1@lg u-space-30" data-layout="u-1@lg">
+      {{ partial "copyright.html" . }}
+    </div>
+  </small>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="https://use.fontawesome.com/6db59a8e72.js"></script>
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NGUwM2U3ZjEtODMwZC00OWUzLTlhZmItYzg1OGNhZTIzY2U2NjM2MDcyNzc3MzA3ODkxNzgy"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/maps/swiper.jquery.min.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.js"></script>
+<script src="/js/main.js"></script>
+
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    // pagination: '.swiper-pagination',
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    // slidesPerView: 1,
+    // paginationClickable: true,
+    grabCursor: true
+    // spaceBetween: 10
+   });
+  $(".product_select").select2({
+    minimumResultsForSearch: Infinity,
+    theme: "product_select"
+  });
+</script>
+</body>
+</html>

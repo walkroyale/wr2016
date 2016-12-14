@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+<main class="page__body" role="main">
+  <div class="page__body__content-area">
+    <section  class="c-main__content" data-layout="u-2/3@lg">
+      <article class="o-media-container t-event">
+        <h2 class="o-section-heading">Brands</h2>
+        <section class="o-waffle-grid c-category-list t-brands">
+          {{ range where .Data.Pages ".Section" "brands" }}
+            {{ if in .Params.categories "featured" }}
+              {{ .Render "list" }}
+            {{ end }}
+          {{ end }}
+        </section>
+      </article>
+    </section>
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

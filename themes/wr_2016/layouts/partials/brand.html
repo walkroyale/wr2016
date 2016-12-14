@@ -1,0 +1,23 @@
+{{ range .brand }}
+  <div class="o-media--gallery o-list__item c-article-list__item t-spotlight-list__item">
+    {{ with .featured }}
+      <img src="{{ .Site.BaseURL}}/{{ . }}" class="img-responsive" alt="" >
+    {{ else }}
+      {{ partial "brand_island.html" . }}
+    {{ end }}
+  </div>
+{{ end }}
+
+<div class="image">
+  {{ if isset .Params "banner" }}
+    <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="" >
+  {{ else }}
+    <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+  {{ end }}
+</div>
+<div class="bg"></div>
+<div class="text">
+  <p class="buttons">
+    <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
+  </p>
+</div>

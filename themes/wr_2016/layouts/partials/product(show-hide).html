@@ -1,0 +1,74 @@
+<li>
+  <div class="product__single-item">
+    <a href="#0">
+      {{ with .product_images }}
+        <ul class="product__slider-wrapper">
+          {{ range $index, $picture := $.product_images }}
+            <li {{ if eq $index 0 }} class="selected"{{ end }}>
+              <img src="{{ index $.product_images $index }}" alt="{{ index $.image_captions $index }}">
+            </li>
+          {{ end }} <!-- end image range -->
+        </ul>
+      {{ end }} <!-- end with product images -->
+    </a>
+
+    <div class="product_options">
+      {{ if gt .logo_color 1 }}
+        <select title ="Select Logo Color" class="product_select logo_color" id="{{ $.brand_id }}_logo-color{{ $.id }}" data-type="select" data-placeholder="Logo Color">
+          <optgroup label="Logo Color">
+          {{ range $index, $color := $.logo_color }}
+            <option class="color-{{ $color | urlize }}" value="{{ index $.logo_color $index }}" data-class="{{ index $.logo_color $index }}"  title="{{ $color }}">{{ $color }}</option>
+          {{ end }} --> <!-- end color range -->
+          </optgroup>
+        </select>
+      {{ end }} <!-- end with logo colors -->
+
+      {{ with .product_size }}
+        <select title ="Select Product Size" class="product_select product_size" id="{{ $.brand_id }}{{ $.id }}_size" data-type="select">
+          {{ range $index, $size := $.product_size }}
+            <option class="{{ $size | urlize }}{{ if eq $index 0 }} active{{ end }}" value="{{ index $.product_size $index }}">{{ index $.product_size $index }}</option>
+          {{ end }} <!-- end size range -->
+        </select>
+      {{ end }} <!-- end with product sizes -->
+    </div> <!-- .cd-customization -->
+  </div> <!-- .cd-single-item -->
+
+  <div class="product__single-item-info">
+    <a href="#0">{{ .title }}</a>
+    <div class="button-wrapper">
+      <div class="layer"></div>
+      <div class="price__cover">{{ .price }}</div>
+      <button href="#" class="main-button fa fa-cart-plus snipcart-add-item add-to-cart" id="{{ $.brand_id }}{{ $.id }}_button"
+        data-item-id="{{ .id }}"
+        data-item-name="{{ .title }}"
+        data-item-image=""
+        data-item-price="{{ .price }}"
+        data-item-stackable="false"
+        data-item-weight="{{ .weight }}"
+        data-item-url="{{ .url }}"
+        data-item-custom1-name="Size"
+        data-item-custom1-options="{{ delimit .product_size "|" }}"
+        data-item-custom2-name="Logo Color"
+        data-item-custom2-options="{{ delimit .logo_color "|" }}"
+      >
+      </button>
+    </div>
+    <!-- <em>${{ .price }}</em> -->
+   <!--  <button href="#" class="snipcart-add-item add-to-cart" id="{{ $.brand_id }}{{ $.id }}_button"
+      data-item-id="{{ .id }}"
+      data-item-name="{{ .title }}"
+      data-item-image=""
+      data-item-price="{{ .price }}"
+      data-item-stackable="false"
+      data-item-weight="{{ .weight }}"
+      data-item-url="{{ .url }}"
+      data-item-custom1-name="Size"
+      data-item-custom1-options="{{ delimit .product_size "|" }}"
+      data-item-custom2-name="Logo Color"
+      data-item-custom2-options="{{ delimit .logo_color "|" }}"
+    >
+      Add to cart
+    </button> -->
+  <!--   <button class="cd-customization-trigger">Customize</button> -->
+  </div> <!-- cd-item-info -->
+</li>

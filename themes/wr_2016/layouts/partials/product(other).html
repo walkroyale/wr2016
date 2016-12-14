@@ -1,0 +1,61 @@
+<li>
+  <div class="cd-single-item">
+    <a href="#0">
+      {{ with .product_images }}
+        <ul class="cd-slider-wrapper">
+          {{ range $index, $picture := $.product_images }}
+            <li {{ if eq $index 0 }} class="selected"{{ end }}>
+              <img src="{{ index $.product_images $index }}" alt="{{ index $.image_captions $index }}">
+            </li>
+          {{ end }} <!-- end image range -->
+        </ul>
+      {{ end }} <!-- end with product images -->
+    </a>
+
+    <div class="cd-customization">
+      {{ with .product_color }}
+      <div class="color selected-1" data-type="select">
+        <ul>
+          {{ range $index, $color := $.product_color }}
+            <li class="color-{{ add $index 1 }}{{ if eq $index 0 }} active{{ end }}">color-{{ add $index 1 }}</li>
+          {{ end }} <!-- end color range -->
+        </ul>
+      </div>
+      {{ end }} <!-- end with product colors -->
+      
+      <div class="size" data-type="select">
+        <ul>
+          {{ with .product_size }}
+            {{ range $index, $size := $.product_size }}
+              <li class="{{ $size | urlize }}{{ if eq $index 0 }} active{{ end }}">{{ index $.product_size $index }}</li>
+            {{ end }} <!-- end size range -->
+          {{ end }} <!-- end with product sizes -->
+        </ul>
+      </div>
+
+      
+    </div> <!-- .cd-customization -->
+    
+  </div> <!-- .cd-single-item -->
+
+  <div class="cd-item-info">
+    <b><a href="#0">{{ .title }}</a></b>
+    <em>${{ .price }}</em>
+    <button href="#" class="snipcart-add-item add-to-cart"
+      data-item-id="{{ .id }}"
+      data-item-name="{{ .title }}"
+      data-item-image=""
+      data-item-price="{{ .price }}"
+      data-item-stackable="false"
+      data-item-weight="{{ .weight }}"
+      data-item-url="{{ .url }}"
+      data-item-custom1-name="Size"
+      data-item-custom1-options="{{ delimit .product_size "|" }}"
+      data-item-custom2-name="Color"
+      data-item-custom2-options="{{ delimit .product_color "|" }}"
+    >
+      Add to cart
+    </button>
+    <button class="cd-customization-trigger">Customize</button>
+  </div> <!-- cd-item-info -->
+</li>

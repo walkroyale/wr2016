@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+  <main class="page__body" role="main">
+    <ul class="page__body__content-area product__gallery">
+    {{ range $index, $products := $.Site.Data.products }}
+      {{ $brandid := $.Params.brand_id }}
+      {{ if eq .brand_id ($brandid) }}
+        {{ partial "product.html" . }} 
+      {{ end }} <!-- end brand selection -->
+    {{ end }} <!-- end range -->
+    </ul>
+  </main>
+{{ partial "footer.html" . }}

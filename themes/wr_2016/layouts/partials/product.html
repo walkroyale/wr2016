@@ -1,0 +1,97 @@
+
+  <div class="single-product" style="">
+    <div class="t-product-image">
+      {{ with .color.logo }}
+        <!-- Slider main container -->
+        <div class="swiper-container ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              {{ range $index, $lcpic := $.color.logo  }}
+                <!-- Slides -->
+                <div class="swiper-slide">                
+                  <img height="auto" width="300" src="{{ index $lcpic.images }}" />
+                </div>
+              {{ end }} <!-- end color range -->
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          <!--   <div class="product_select logo_color">
+              
+            </div> -->
+        </div>
+      {{ end }} <!-- end if logo color -->
+    </div>
+    <div class="t-product-details">
+      <h3 class="t-product-heading">{{ .title }}</h3>
+      <div class="t-product-content">
+        <div class="price__cover">{{ .price }}</div>
+        <p>{{ .description | markdownify }}</p>
+      </div>
+      <hr>
+      <div class="product_opt"></div>
+      <div class="t-product-options">
+        {{ with .color.logo }}
+
+        {{ end }} <!-- end color selection -->
+        {{ with .product_size }}
+          <div class="product_opt product_size">
+            <label for="{{ $.brand_id }}{{ $.id }}_size">
+              Size: <br>
+              <select data-placeholder="Size" data-type="select" title ="Select Product Size" class="product_select size" id="{{ $.brand_id }}{{ $.id }}_size">
+                {{ range $index, $size := $.product_size }}
+                  <option class="{{ $size | urlize }}" value="{{ index $.product_size $index }}">{{ index $.product_size $index }}</option>
+                {{ end }} <!-- end size range -->
+              </select>
+            </label>
+          </div>
+        {{ end }} <!-- end with product sizes -->
+
+        <!-- product quantity -->
+        <div class="product_opt product_quantity">
+          <label for="{{ $.brand_id }}{{ $.id }}_quantity">Quantity: </label><br><input class="product_input quantity" id="{{ $.brand_id }}{{ $.id }}_quantity" type="number" value="1"/>
+        </div>
+          {{ range $i, $e := .color.logo }}
+            {{ $option := index $e "name" }}
+            {{ $.Scratch.SetInMap "colors" "c1" "$option" }}
+          {{ end }}
+            {{ $.Scratch.GetSortedMapValues "colors" }}
+        
+   
+
+        <p class="add-to-cart">
+          <a href="#"
+          class="snipcart-add-item"
+          data-item-id="{{ .id }}"
+          data-item-name="{{ .title }}"
+          data-item-image=""
+          data-item-price="{{ .price }}"
+          data-item-quantity = "1"
+          data-item-weight="{{ .weight }}"
+          data-item-url="{{ .url }}"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="{{ delimit .product_size "|" }}"
+          data-item-custom2-name="Color"
+          data-item-custom2-options="
+            {{ range $i, $e := .color.logo }}
+              {{ $option := index $e "name" }}
+              {{ if $i }}| 
+              {{ end }}
+              {{ $option }}
+            {{ end }} <!-- end color logo range -->
+          ">
+            Add to cart
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="js-event-log"></div>
+
+
+
+  
