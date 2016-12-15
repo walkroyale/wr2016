@@ -15,7 +15,7 @@
   & .swiper-container {
     margin: 0;
     & .swiper-button-next {
-      right: 33px;
+      right: 48px;
     }
   }
 }
