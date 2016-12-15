@@ -33,10 +33,22 @@
         <p>{{ .description | markdownify }}</p>
       </div>
       <hr>
-      <div class="product_opt"></div>
       <div class="t-product-options">
-        {{ with .color.logo }}
-
+        {{ with gt (len .color.logo) 1 }}
+          <div class="product_opt product_color--logo">
+            <label for="{{ $.brand_id }}{{ $.id }}_lc">
+              Logo Color: <br>
+              <select data-placeholder="Logo Color" data-type="select" title ="Select Logo Color" class="product_select color logo" id="{{ $.brand_id }}{{ $.id }}_lc">
+                {{ range $index, $color := $.color.logo }}
+                  <option class="{{ $color.cid }}" value="{{ index $color "name" }}">{{ index $color "name" }}</option>
+                {{ end }} <!-- end size range -->
+              </select>
+            </label>
+          </div>
+        {{ else }}
+          <div class="product_opt color logo">
+            Logo Color: {{ index .color.logo "name" }}
+          </div>
         {{ end }} <!-- end color selection -->
         {{ with .product_size }}
           <div class="product_opt product_size">
@@ -55,13 +67,6 @@
         <div class="product_opt product_quantity">
           <label for="{{ $.brand_id }}{{ $.id }}_quantity">Quantity: </label><br><input class="product_input quantity" id="{{ $.brand_id }}{{ $.id }}_quantity" type="number" value="1"/>
         </div>
-          {{ range $i, $e := .color.logo }}
-            {{ $option := index $e "name" }}
-            {{ $.Scratch.SetInMap "colors" "c1" "$option" }}
-          {{ end }}
-            {{ $.Scratch.GetSortedMapValues "colors" }}
-        
-   
 
         <p class="add-to-cart">
           <a href="#"
@@ -75,14 +80,23 @@
           data-item-url="{{ .url }}"
           data-item-custom1-name="Size"
           data-item-custom1-options="{{ delimit .product_size "|" }}"
-          data-item-custom2-name="Color"
+          data-item-custom2-name="Logo Color"
           data-item-custom2-options="
-            {{ range $i, $e := .color.logo }}
-              {{ $option := index $e "name" }}
-              {{ if $i }}| 
-              {{ end }}
-              {{ $option }}
-            {{ end }} <!-- end color logo range -->
+            {{- range $i, $e := .color.logo -}}
+              {{- $option := index $e "name" -}}
+              {{- if $i -}}| 
+              {{- end -}}
+              {{- $option -}}
+            {{- end -}}
+          "
+          data-item-custom3-name="Product Color"
+          data-item-custom3-options="
+            {{- range $i, $e := .color.product -}}
+              {{- $option := index $e "name" -}}
+              {{- if $i -}}| 
+              {{- end -}}
+              {{- $option -}}
+            {{- end -}}
           ">
             Add to cart
           </a>
