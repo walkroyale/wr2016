@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
   <main class="page__body" role="main">
-    <ul class="page__body__content-area product__gallery">
+    <ul class="page__body__content-area product__gallery o-list--bare">
     {{ range $index, $products := $.Site.Data.products }}
       {{ $brandid := $.Params.brand_id }}
       {{ if eq .brand_id ($brandid) }}

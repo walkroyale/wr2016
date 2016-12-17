@@ -9,7 +9,7 @@
               {{ range $index, $lcpic := $.color.logo  }}
                 <!-- Slides -->
                 <div class="swiper-slide">                
-                  <img height="auto" width="300" src="{{ index $lcpic.images }}" />
+                  <img class="lcpic$index" height="auto" width="300" src="{{ index $lcpic.images }}" />
                 </div>
               {{ end }} <!-- end color range -->
             </div>
@@ -23,6 +23,9 @@
           <!--   <div class="product_select logo_color">
               
             </div> -->
+            <a class="btn" onclick="mySwiper.slideTo(1)">
+              click me
+            </a>
         </div>
       {{ end }} <!-- end if logo color -->
     </div>
