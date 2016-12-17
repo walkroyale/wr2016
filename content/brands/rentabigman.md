@@ -1,7 +1,7 @@
 +++
 brand_id = "rentabigman"
 categories = ["featured"]
-logo = "http://dev.walkroyale.com/img/shop_rentabigman.png"
+logo = "/img/shop_rentabigman.png"
 name = "Rentabigman Clothing"
 +++
 
