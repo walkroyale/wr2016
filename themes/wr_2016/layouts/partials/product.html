@@ -4,28 +4,22 @@
       {{ with .color.logo }}
         <!-- Slider main container -->
         <div class="swiper-container ">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              {{ range $index, $lcpic := $.color.logo  }}
-                <!-- Slides -->
-                <div class="swiper-slide">                
-                  <img class="lcpic$index" height="auto" width="300" src="{{ index $lcpic.images }}" />
-                </div>
-              {{ end }} <!-- end color range -->
-            </div>
-            
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          <!--   <div class="product_select logo_color">
-              
-            </div> -->
-            <a class="btn" onclick="mySwiper.slideTo(1)">
-              click me
-            </a>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            {{ range $index, $lcpic := $.color.logo  }}
+              <!-- Slides -->
+              <div class="swiper-slide">                
+                <img class="lcpic$index" height="auto" width="300" src="{{ index $lcpic.images }}" />
+              </div>
+            {{ end }} <!-- end color range -->
+          </div>
+          
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       {{ end }} <!-- end if logo color -->
     </div>
