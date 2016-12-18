@@ -149,6 +149,12 @@ button:hover {
 /* @close swiper images */
 
 /* ********** @section product select options ********** */
+  /*.select2-results {
+    display: none;
+    @media (--medium) {
+      display: block;
+    }
+  }*/
   .select2.select2-container.select2-container--product_select {
     width: 100% !important;
   }
@@ -210,7 +216,7 @@ button:hover {
     /*position: relative;*/
 
     /*arrow*/
-    background-image:
+   /* background-image:
       linear-gradient(45deg, transparent 50%, rgba(207, 207, 207, 1) 50%),
       linear-gradient(135deg, rgba(207, 207, 207, 1) 50%, transparent 50%),
       linear-gradient(to right, rgba(207, 207, 207, 1), rgba(207, 207, 207, 1));
@@ -222,9 +228,9 @@ button:hover {
       7px 6px,
       7px 8px,
       0px 0px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     @nest .product_size & {
-      width: 91px;
+      /*width: 91px;*/
     }
   }
   .select2-container .select2-selection--single .select2-selection__rendered {
