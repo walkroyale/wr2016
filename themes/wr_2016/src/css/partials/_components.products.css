@@ -46,6 +46,21 @@
     position: relative;
     width: 100%;
   }
+  .t-product-image, button:focus {
+    outline: none;
+  }
+
+  button:hover {
+    opacity: .8;
+  }
+
+  .fa {
+    font-size: 20px !important;
+  }
+
+  .fa-info, .fa-cart-plus {
+    color: white;
+  }
   /* ********** @section swiper images ********** */
     .swiper-container {
       height: auto;
