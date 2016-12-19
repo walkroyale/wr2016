@@ -3,7 +3,9 @@ jQuery(document).ready(function(){
   // var $e = $("<span>" + currentVal + "</span>");
   // $eventLog.append($e);
     
-
+  // create plain select2 lists
+    $('.select2-results__options').addClass('o-list--bare');
+    
   // item color
     var $colorSelect = $(".product_select.color");
 
