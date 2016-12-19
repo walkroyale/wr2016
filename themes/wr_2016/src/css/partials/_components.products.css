@@ -78,13 +78,16 @@
     }
     .swiper-slide img {
       height: auto;
+      /*left: -1rem;*/
       max-height:100%;
-      max-width:100%;
+      min-width:100%;
+      position: relative;
       width:auto;
     }
   /* @close swiper images */
   
 /* @close product image */
+
 /* ********** @section product details ********** */
   
   .t-product-details {
