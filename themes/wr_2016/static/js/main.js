@@ -1,4 +1,28 @@
 jQuery(document).ready(function(){
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    // pagination: '.swiper-pagination',
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    // slidesPerView: 1,
+    // paginationClickable: true,
+    grabCursor: true,
+    hashnav: true,
+    slideToClickedSlide:true
+    // spaceBetween: 10
+   });
+  $(".product_select").select2();
+  // $(".product_select").select2({
+  //   minimumResultsForSearch: Infinity
+  //   // theme: "product_select"
+  // });
   // var $eventLog = $(".js-event-log");
   // var $e = $("<span>" + currentVal + "</span>");
   // $eventLog.append($e);
@@ -15,7 +39,6 @@ jQuery(document).ready(function(){
       e.stopPropagation();
     });
 
-  
   // item size
     var $eventSelect = $(".product_select.size");
 
