@@ -35,7 +35,7 @@
           <div class="product_opt product_color--logo">
             <label for="{{ $.brand_id }}{{ $.id }}_lc">
               Logo Color: <br>
-              <select class="product_select" id="{{ $.brand_id }}{{ $.id }}_lc">
+              <select class="new_select" id="{{ $.brand_id }}{{ $.id }}_lc">
                 {{ range $index, $color := $.color.logo }}
                   <option class="{{ $color.cid }}" value="{{ index $color "name" }}">{{ index $color "name" }}</option>
                 {{ end }} <!-- end size range -->

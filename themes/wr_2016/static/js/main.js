@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
     slideToClickedSlide:true
     // spaceBetween: 10
    });
-  $(".product_select").select2({
+  $(".new_select").select2({
     minimumResultsForSearch: Infinity
   });
   // $(".product_select").select2({
