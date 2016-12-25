@@ -1,4 +1,4 @@
-ul:not(.o-list, .o-list--bare, .menubar, .snip-steps, .select2-results__options), ol:not(.o-list) {
+ul:not(.o-list, .o-list--bare, .menubar, .snip-steps, .selectboxit-list, .product_opt__list), ol:not(.o-list) {
   list-style-position: inside;
   margin-bottom: 1rem;
   padding-left: 1rem;
