@@ -1,0 +1,12 @@
+{{- with .product_size -}}
+  <div class="product_opt product_size">
+    <label for="{{- $.brand_id -}}{{- $.id -}}_size">
+      Size: <br>
+      <select data-placeholder="Size" data-type="select" title ="Select Product Size" class="product_select size" id="{{- $.brand_id -}}{{- $.id -}}_size">
+        {{- range $index, $size := $.product_size -}}
+          <option class="{{- $size | urlize -}}" value="{{- index $.product_size $index -}}">{{- index $.product_size $index -}}</option>
+        {{- end -}} <!-- end size range -->
+      </select>
+    </label>
+  </div>
+{{- end -}} <!-- end with product sizes -->

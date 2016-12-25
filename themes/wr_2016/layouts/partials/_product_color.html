@@ -1,0 +1,16 @@
+{{- with gt (len .color.product) 1 -}}
+  <div class="product_opt product_color--product">
+    <label for="{{- $.brand_id -}}{{- $.id -}}_pc">
+    Product Color: <br>
+      <select data-placeholder="Product Color" data-type="select" title ="Select Product Color" class="product_select color product" id="{{- $.brand_id -}}{{- $.id -}}_pc">
+        {{- range $index, $color := $.color.product -}}
+          <option class="{{- $color.cid -}}" value="{{- index $color "name" -}}">{{- index $color "name" -}}</option>
+        {{- end -}} <!-- end size range -->
+      </select>
+    </label>
+  </div>
+{{- else -}}
+  <div class="product_opt color product">
+    Product Color: <div style="color: rgba(254, 214, 48, 1);"> {{- range $e := .color.product -}}{{- $option := index $e "name" -}}{{- $option -}}{{- end -}}</div>
+  </div>
+{{- end -}} <!-- end color selection -->
