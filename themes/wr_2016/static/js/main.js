@@ -34,7 +34,7 @@ jQuery(document).ready(function(){
       var $cellButtons = $cellWrapper.find('li a');
 
       // update selected cellButtons
-      $carousel.on( 'select.flickity', function() {
+      $carousel.on( 'select.flickity', function(e) {
         $cellButtons.filter('.is-selected')
           .removeClass('is-selected');
         $cellButtons.eq( flkty.selectedIndex )
@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
         var $cartOpt = $cellButtons.filter('.is-selected').text();
         
         $cellButtons.filter('.is-selected').closest('.t-product-options').find('.snipcart-add-item').data('item-custom2-value', $cartOpt);
-        stopPropagation();
+        e.stopPropagation();
       });
     }
 
