@@ -34,6 +34,6 @@ Owner of KJ Financial Services and Kurvy Kitten Clothing.
 Designer and Founder of Crown of Thorns Clothing
 
 
-[1]: /img/about/team/w_burns.jpg
-[2]: /img/about/team/k_johnson.jpg
-[3]: /img/about/team/d_lee.jpg
+[1]: /img/about/team/w_burns.png
+[2]: /img/about/team/k_johnson.png
+[3]: /img/about/team/d_lee.png
