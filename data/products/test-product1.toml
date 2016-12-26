@@ -5,8 +5,6 @@ description = "These white hoodies are just in time for winter.  In sizes up to 
 brand_id = "kurvykitten"
 pdateadded = "2015-10-09T15:29:09Z"
 price = "40"
-product_image = "/img/products/kk-hoodie/hoodie-white-orng-wht.jpg"
-product_images = ["/img/products/kk-hoodie/hoodie-white-orng-wht.jpg","/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg","/img/products/kk-hoodie/hoodie-white-red-blackr.jpg","/img/thumb-1.jpg","/img/thumb-2.jpg"]
 product_size = [
 "Small",
 "Medium",
@@ -39,6 +37,3 @@ images = "/img/products/kk-hoodie/hoodie-white-red-blackr.jpg"
 name = "White"
 cid = "white"
 images = ""
-
-# image_captions = ["White, Orange & White Hoodie","White, Purple & Silver Hoodie","White, Red & Black Hoodie","Test 1","Test 2"]
-# logo_color = ["orangeblue","silverpurple","blackred"]

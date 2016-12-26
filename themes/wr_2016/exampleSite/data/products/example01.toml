@@ -1,0 +1,42 @@
+# A unique identifier (started with numbers at the time of publishing) a good idea is to have this number in the file name - it won't show up on the site, but will help keep track of what number you're on.
+id = ""
+# toggle true/false to have the product show up on the site
+active = "false"
+title = "Title for the site pages"
+description = "Product description."
+# kurvykitten, or rentabigman at the time of this writing
+brand_id = ""
+pdateadded = "2015-10-09T15:29:09Z"
+price = "40"
+# standard at the time of creating this theme
+product_size = [
+"Small",
+"Medium",
+"Large",
+"X-Large",
+"2X-Large",
+"3X-Large",
+"4X-Large"
+]
+url = "/"
+
+# number, can be used to order products (0=top, 100=bottom)
+weight = ""
+
+[color]
+[[color.logo]]
+# color name for the shopping cart, can be whatever you want
+name = "" 
+# color name no spaces, or special characters.  Example blackwhite
+cid = ""
+# file/path/.jpg, png
+images = ""
+
+
+[[color.product]]
+# color name for the shopping cart, can be whatever you want
+name = ""
+# color name no spaces, or special characters.  Example blackwhite
+cid = ""
+# file/path/.jpg, png
+images = ""

@@ -5,28 +5,28 @@
     {{- range $index, $products := $.Site.Data.products -}}
       {{- $brandid := $.Params.brand_id -}}
       {{- if eq .brand_id ($brandid) -}}
-
-        <div class="single-product" style="">
-          <div class="t-product-image__wrapper">
-            {{- partial "_product_sliders.html" . -}}
-          </div>
-          <div class="t-product-details">
-            <h3 class="t-product-heading">{{- .title -}}</h3>
-            <div class="t-product-content">
-              <div class="price__cover">{{- .price -}}</div>
-              <p>{{- .description | markdownify -}}</p>
+        {{- if eq .active "true" -}}
+          <div class="single-product" style="">
+            <div class="t-product-image__wrapper">
+              {{- partial "_product_sliders.html" . -}}
             </div>
-            <hr>
-            <div class="t-product-options">
-              {{- partial "_logo_color.html" . -}}
-              {{- partial "_product_color.html" . -}}
-              {{- partial "_product_size.html" . -}}
-              {{- partial "_product_quantity.html" . -}}
-              {{- partial "_cart_button.html" . -}}
+            <div class="t-product-details">
+              <h3 class="t-product-heading">{{- .title -}}</h3>
+              <div class="t-product-content">
+                <div class="price__cover">{{- .price -}}</div>
+                <p>{{- .description | markdownify -}}</p>
+              </div>
+              <hr>
+              <div class="t-product-options">
+                {{- partial "_logo_color.html" . -}}
+                {{- partial "_product_color.html" . -}}
+                {{- partial "_product_size.html" . -}}
+                {{- partial "_product_quantity.html" . -}}
+                {{- partial "_cart_button.html" . -}}
+              </div>
             </div>
           </div>
-        </div>
-  
+        {{- end -}} <!-- end active -->
       {{- end -}} <!-- end brand selection -->
     {{- end -}} <!-- end range -->
     </ul>
