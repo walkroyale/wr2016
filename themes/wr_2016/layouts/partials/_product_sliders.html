@@ -2,7 +2,7 @@
   <div class="t-product-image__slider"> <!-- Slider main container -->
     {{ range $index, $lcpic := $.color.logo  }}
       <div class="t-product-image__cell">
-        <img class="lcpic$index" height="auto" width="300" src="{{ index $lcpic.images }}" />
+        <img class="lcpic{{- $index -}}" height="auto" width="300" src="{{ index $lcpic.images }}" />
       </div>
     {{ end }} <!-- end color range -->
   </div>
@@ -10,7 +10,7 @@
   <div class="t-product-image__slider"> <!-- Slider main container -->
     {{ range $index, $propic := $.color.product  }}
       <div class="t-product-image__cell">
-        <img class="propic$index" height="auto" width="300" src="{{ index $propic.images }}" />
+        <img class="propic{{- $index -}}" height="auto" width="300" src="{{ index $propic.images }}" />
       </div>
     {{ end }} <!-- end color range -->
   </div>

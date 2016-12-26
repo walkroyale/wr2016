@@ -20,7 +20,7 @@ product_size = [
 ]
 url = "/"
 
-# number, can be used to order products (0=top, 100=bottom)
+# shipping
 weight = ""
 
 [color]

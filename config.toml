@@ -6,10 +6,8 @@ theme = "wr_2016"
 [params]
   brand_id = "brand" # brand name lowercase, no spaces, no special characters
   featured = false
-  gender = "gender"
   logo = "logo"
   name = "brand name"
-  price = "price"
   tagline   = "We are all Kings and Queens. Be that daily."
   wordmark  = "Walk Royale Clothing"
 

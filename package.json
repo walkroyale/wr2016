@@ -1,0 +1,28 @@
+{
+  "name": "walkroyale",
+  "version": "1.0.0",
+  "description": "Initializing Dato CMS",
+  "main": "dato.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justrjlewis/dev-walkroyale-2017.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "hugo",
+    "cms",
+    "dato"
+  ],
+  "author": "RJ Lewis rj@justrjlewis.com (http://justrjlewis.com)",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/justrjlewis/dev-walkroyale-2017/issues"
+  },
+  "homepage": "https://github.com/justrjlewis/dev-walkroyale-2017#readme",
+  "devDependencies": {
+    "datocms-client": "^0.3.13"
+  }
+}
