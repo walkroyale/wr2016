@@ -3,6 +3,7 @@ brand_id = "rentabigman"
 categories = ["featured"]
 logo = "/img/shop_rentabigman.png"
 name = "Rentabigman Clothing"
+slug = "rentabigman"
 +++
 
 # Rentabigman is not just a clothing line…..

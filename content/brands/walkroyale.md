@@ -3,6 +3,7 @@ brand_id = "walkroyale"
 categories = [""]
 logo = ""
 name = "Walk Royale Clothing"
+slug = "walkroyale"
 +++
 
 The dreaded trip to the store. Did your heart drop? Mine used to. Seeing the same styles and limited choices we are offered used to make me sick. I dreaded it! Who in the world thought of the term, “husky” as the way to describe our section?
