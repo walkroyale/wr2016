@@ -1,8 +1,9 @@
 id = "02"
-active = true
+active = "true"
 brand_id = "kurvykitten"
 description = "Hug all the right curves and feel Purrrty in this slim fit, long sleeved gray shirt."
 price = 25
+url = "/"
 prod_weight = ""
 title = "Purrrty Longsleeved Raglan"
 product_size = ["Small", "Medium", "Large", "X-Large", "2X-Large", "3X-Large", "4X-Large"]

@@ -15,7 +15,7 @@ product_size = [
 "4X-Large"
 ]
 url = "/"
-weight = ""
+prod_weightweight = ""
 
 [color]
 [[color.logo]]
