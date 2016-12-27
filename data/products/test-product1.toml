@@ -1,0 +1,39 @@
+id = "01"
+active = "true"
+title = "Kurvy Kitten Hoodie"
+description = "These white hoodies are just in time for winter.  In sizes up to 4XL, choose your from three of our best selling logo colors today!"
+brand_id = "kurvykitten"
+pdateadded = "2015-10-09T15:29:09Z"
+price = "40"
+product_size = [
+"Small",
+"Medium",
+"Large",
+"X-Large",
+"2X-Large",
+"3X-Large",
+"4X-Large"
+]
+url = "/"
+weight = ""
+
+[color]
+[[color.logo]]
+name = "Orange & Blue"
+cid = "orangeblue"
+images = "/img/products/kk-hoodie/hoodie-white-orng-wht.jpg"
+
+[[color.logo]]
+name = "Silver & Purple"
+cid = "silverpurple"
+images ="/img/products/kk-hoodie/hoodie-white-prpl-slvr.jpg"
+
+[[color.logo]]
+name = "Black & Red"
+cid = "blackred"
+images = "/img/products/kk-hoodie/hoodie-white-red-blackr.jpg"
+
+[[color.product]]
+name = "White"
+cid = "white"
+images = ""
