@@ -1,0 +1,8 @@
+dev.walkroyale.com {
+  root public
+  basicauth /admin wradmin wr2016RTW
+  errors ../log/wr2016_caddy.error.log
+  gzip
+  hugo
+  log ../log/wr2016_caddy.access.log
+}

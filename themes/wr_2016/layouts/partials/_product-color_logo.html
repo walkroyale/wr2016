@@ -1,0 +1,26 @@
+{{- with gt (len .color.logo) 1 -}}
+  <div class="product_opt color logo">
+    <label for="{{- $.brand_id -}}{{- $.id -}}_lc">
+      Brand Color: <br>
+    </label>
+    <ul class="product_opt__list">
+      {{- range $index, $color := $.color.logo -}}
+      <li class="product_opt__list-item"><a class="product_opt__list-item--target product_select color logo {{ $color.cid }}" href="#" title="{{- index $color "name" -}}">{{- index $color "name" -}}</a></li>
+      {{- end -}} <!-- end logo color range -->
+    </ul>         
+  </div>
+{{- end -}} <!-- end logo color selector -->
+
+{{- with eq (len .color.logo) 1 -}}
+  {{- range $e := $.color.logo -}}
+    {{- $option := index $e "name" -}}
+    {{ if ne $option "" }}
+      <div class="product_opt color logo">
+        Brand Color: <div style="color: rgba(254, 214, 48, 1);"> {{- $option -}}</div>
+      </div> 
+    {{ else }}
+      
+    {{ end }} <!-- end if -->
+  {{- end -}} <!-- end range -->
+{{- end -}} <!-- end logo color selector -->
+

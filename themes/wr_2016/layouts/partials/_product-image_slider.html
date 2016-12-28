@@ -1,0 +1,25 @@
+<!-- /// @group product color option images /// -->
+  {{- with gt (len .color.product) 1 -}}
+    <div class="t-product-image__slider product_slider"> <!-- Slider main container -->
+      <!-- //iterate over the image slider -->
+      {{- range $index, $e := $.color.product -}}
+        <div class="t-product-image__cell">
+          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $e.images }}" />
+        </div>
+      {{- end -}} <!-- end color range -->
+    </div>
+  {{- end -}} <!-- end product color slider -->
+<!-- /// @end product color option images /// -->
+
+<!-- /// @group logo color option images /// -->
+  {{- with gt (len .color.logo) 1 -}}
+    <div class="t-product-image__slider logo_slider"> <!-- Slider main container -->
+      <!-- //iterate over the image slider -->
+      {{- range $index, $e := $.color.logo -}}
+        <div class="t-product-image__cell">
+          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $e.images }}" />
+        </div>
+      {{- end -}} <!-- end color range -->
+    </div>
+  {{- end -}} <!-- end logo color slider -->
+<!-- /// @end logo color option images /// -->

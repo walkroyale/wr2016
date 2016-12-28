@@ -1,0 +1,15 @@
+<!-- check if there are multiple images of either the logo, or the product -->
+{{- with or (gt (len .color.product) 1) (gt (len .color.logo) 1) -}}
+  {{- if gt (len $.color.product) 1 -}}
+    <div class="t-product-image__slider"> <!-- Slider main container -->
+      product
+    </div>
+  {{- else -}}
+    <div class="t-product-image__slider"> <!-- Slider main container -->
+      logo
+    </div>
+  {{- end -}} <!-- end product -->
+{{- end -}} <!-- end with multiple image -->
+
+{{- with eq (len .color.logo) 1 -}}
+{{- end -}} <!-- end logo color selector -->
