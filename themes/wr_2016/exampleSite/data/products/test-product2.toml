@@ -1,6 +1,6 @@
-id = "01"
+id = "03"
 active = "true"
-title = "Kurvy Kitten Hoodie"
+title = "Kurvy Kitten stuff"
 description = "These white hoodies are just in time for winter.  In sizes up to 4XL, choose your from three of our best selling logo colors today!"
 brand_id = "kurvykitten"
 pdateadded = "2015-10-09T15:29:09Z"
@@ -34,6 +34,6 @@ cid = "blackred"
 images = "/img/products/kk-hoodie/hoodie-white-red-blackr.jpg"
 
 [[color.product]]
-name = "White"
-cid = "white"
+name = ""
+cid = ""
 images = ""

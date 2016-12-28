@@ -1,34 +1,34 @@
 {{- partial "header.html" . -}}
 {{- $baseurl := .Site.BaseURL -}}
   <main class="page__body" role="main">
-    <ul class="page__body__content-area product__gallery o-list--bare">
-    {{- range $index, $products := $.Site.Data.products -}}
-      {{- $brandid := $.Params.brand_id -}}
-      {{- if eq .brand_id ($brandid) -}}
-        {{- if eq .active "true" -}}
-          <div class="single-product" style="">
-            <div class="t-product-image__wrapper">
-              {{- partial "_product_sliders.html" . -}}
-            </div>
+    <div class="page__body__content-area product__gallery o-list--bare">
+      {{- range $index, $products := $.Site.Data.products -}}
+        {{- $brandid := $.Params.brand_id -}}
+        {{- if and (eq .brand_id ($brandid)) (eq .active "true") -}}
+          <div class="single-product
+            {{ if or (gt (len .color.product) 1) (gt (len .color.logo) 1) }}
+              o-slider-container
+            {{ end }}
+          " style="">
+            <div class="t-product-image__section">
+              <!-- check if there are multiple images of either the logo, or the product -->
+              {{- if or (gt (len .color.product) 1) (gt (len .color.logo) 1) -}}
+                {{- partial "_product-image_slider.html" . -}}
+              {{- end -}} <!-- end with multiple image -->
+            </div>  
             <div class="t-product-details">
-              <h3 class="t-product-heading">{{- .title -}}</h3>
-              <div class="t-product-content">
-                <div class="price__cover">{{- .price -}}</div>
-                <p>{{- .description | markdownify -}}</p>
-              </div>
-              <hr>
+              {{- partial "_product-info.html" . -}}
               <div class="t-product-options">
-                {{- partial "_logo_color.html" . -}}
-                {{- partial "_product_color.html" . -}}
+                {{- partial "_product-color_logo.html" . -}}
+                {{- partial "_product-color_apparel.html" . -}}
                 {{- partial "_product_size.html" . -}}
                 {{- partial "_product_quantity.html" . -}}
-                {{- partial "_cart_button.html" . -}}
+                {{- partial "_product_cart-button.html" . -}}
               </div>
             </div>
           </div>
-        {{- end -}} <!-- end active -->
-      {{- end -}} <!-- end brand selection -->
-    {{- end -}} <!-- end range -->
-    </ul>
+        {{- end -}} <!-- end brand selection -->
+      {{- end -}} <!-- end range -->
+    </div>
   </main>
 {{- partial "footer.html" . -}}

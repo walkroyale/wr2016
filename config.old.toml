@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Walkroyale Clothing Boutique"
 theme = "wr_2016"
+MetaDataFormat = "yaml"
 
 [params]
   brand_id = "brand" # brand name lowercase, no spaces, no special characters
