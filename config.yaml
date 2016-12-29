@@ -3,37 +3,16 @@ languageCode:  "en-us"
 title:  "Walkroyale Clothing Boutique"
 theme:  "wr_2016"
 MetaDataFormat:  "yaml"
+ignoreFiles: ["content/_brands/"]
 
 params:
   brand_id:  "brand" # brand name lowercase, no spaces, no special characters
   featured:  false
+  intro: "We are the conglomerate company of: Rentabigman & Kurvy Kitten clothing lines. We provide high quality apparel with specialization in plus sized clothing. Our sizes go up to 4XL on average some items go up 6XL."
   logo:  "logo"
   name:  "brand name"
   tagline:  "We are all Kings and Queens. Be that daily."
   wordmark:  "Walk Royale Clothing"
-
-params:
-  intro:
-    - about: "We are the conglomerate company of: Rentabigman & Kurvy Kitten clothing lines. We provide high quality apparel with specialization in plus sized clothing. Our sizes go up to 4XL on average some items go up 6XL."
-
-# Set up your menu items in the navigation bar
-# You can use pre to prepend a font awesome icon to your text
-
-menu:
-  main:
-    - name: "About"
-      url: "/about"
-      weight: 2
-menu:
-  main:
-    - name: "Home"
-      url: "/"
-      weight: 1
-menu:
-  main:
-    - name: "Cart"
-      url: "#"
-      weight: 3
 
 taxonomies:
   tag: "tags"
@@ -43,4 +22,19 @@ taxonomies:
   # size:  "sizes"
   # color:  "colors"
   # logo_color:  "logo_colors"
+
+# Set up your menu items in the navigation bar
+# You can use pre to prepend a font awesome icon to your text
+
+menu:
+  main:
+    - name: "About"
+      url: "/about"
+      weight: 2
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Cart"
+      url: "#"
+      weight: 3
 ...

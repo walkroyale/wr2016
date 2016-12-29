@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-{{ $baseurl := .Site.BaseURL }}
 
 <main class="page__body" role="main">
   <div class="page__body__content-area">
@@ -10,8 +9,8 @@
           {{ range where .Site.Pages ".Section" "brands" }}
             {{ if in .Params.categories "featured" }}
               {{ .Render "list" }}
-            {{ end }}
-          {{ end }}
+            {{ end }} <!-- end if -->
+          {{ end }} <!-- end range -->
         </section>
       </article>
     </section>

@@ -1,0 +1,15 @@
+id: '124'
+name: Walkroyale
+locales:
+  - en
+themeHue: 277
+domain: null
+internalDomain: walkroyale.admin.datocms.com
+noIndex: false
+globalSeo: null
+favicon: null
+faviconMetaTags:
+  - tagName: meta
+    attributes:
+      name: application-name
+      content: Walkroyale

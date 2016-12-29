@@ -1,23 +1,23 @@
 <!-- /// @group product color option images /// -->
-  {{- with gt (len .color.product) 1 -}}
+  {{- with gt (len .color.product.images) 1 -}}
     <div class="t-product-image__slider product_slider"> <!-- Slider main container -->
       <!-- //iterate over the image slider -->
-      {{- range $index, $e := $.color.product -}}
-        <div class="t-product-image__cell">
-          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $e.images }}" />
-        </div>
-      {{- end -}} <!-- end color range -->
+        {{- range $index, $slice := $.color.product.images -}}
+          <div class="t-product-image__cell">
+            <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $slice }}" />
+          </div>
+        {{- end -}} <!-- end range -->
     </div>
   {{- end -}} <!-- end product color slider -->
 <!-- /// @end product color option images /// -->
 
 <!-- /// @group logo color option images /// -->
-  {{- with gt (len .color.logo) 1 -}}
+  {{- with gt (len .color.logo.images) 1 -}}
     <div class="t-product-image__slider logo_slider"> <!-- Slider main container -->
       <!-- //iterate over the image slider -->
-      {{- range $index, $e := $.color.logo -}}
+      {{- range $index, $slice := $.color.logo.images -}}
         <div class="t-product-image__cell">
-          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $e.images }}" />
+          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $slice }}" />
         </div>
       {{- end -}} <!-- end color range -->
     </div>

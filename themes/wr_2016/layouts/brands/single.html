@@ -1,14 +1,15 @@
 {{- partial "header.html" . -}}
-{{- $baseurl := .Site.BaseURL -}}
+
   <main class="page__body" role="main">
     <div class="page__body__content-area product__gallery o-list--bare">
+
       {{- range $index, $products := $.Site.Data.products -}}
         {{- $brandid := $.Params.brand_id -}}
-        {{- if and (eq .brand_id ($brandid)) (eq .active "true") -}}
+        {{- if and (eq .brand_id ($brandid)) (eq .active true ) -}}
           <div class="single-product
             {{ if or (gt (len .color.product) 1) (gt (len .color.logo) 1) }}
               o-slider-container
-            {{ end }}
+            {{- end -}}
           " style="">
             <div class="t-product-image__section">
               <!-- check if there are multiple images of either the logo, or the product -->
@@ -31,4 +32,5 @@
       {{- end -}} <!-- end range -->
     </div>
   </main>
+
 {{- partial "footer.html" . -}}

@@ -10,24 +10,55 @@
   data-item-url="{{ .url }}"
   data-item-custom1-name="Size"
   data-item-custom1-options="{{ delimit .product_size "|" }}"
-  data-item-custom2-name="Logo Color"
-  data-item-custom2-options="
-    {{- range $i, $e := .color.logo -}}
-      {{- $option := index $e "name" -}}
-      {{- if $i -}}| 
+  {{- with gt (len .color.logo.name) 1 -}}
+    data-item-custom2-name="Logo Color"
+    data-item-custom2-options="
+      {{- range $i, $e := $.color.logo.name -}}
+        {{- $option := index $e -}}
+        {{- if $i -}}| 
+        {{- end -}}
+        {{- $option -}}
       {{- end -}}
-      {{- $option -}}
-    {{- end -}}
-  "
-  data-item-custom3-name="Product Color"
-  data-item-custom3-options="
-    {{- range $i, $e := .color.product -}}
-      {{- $option := index $e "name" -}}
-      {{- if $i -}}| 
+    "
+  {{ end }}
+  {{- with eq (len .color.logo.name) 1 -}}
+    {{- range $check := $.color.logo.name -}}
+      {{ if ne $check "" }}
+        data-item-custom2-name="Logo Color"
+        data-item-custom2-options="
+          {{- range $i, $e := $.color.logo.name -}}
+            {{- $option := index $e -}}
+            {{- $option -}}
+          {{- end -}}
+        "
       {{- end -}}
-      {{- $option -}}
     {{- end -}}
-  ">
+  {{ end }}
+  {{- with gt (len .color.product.name) 1 -}}
+    data-item-custom3-name="Product Color"
+    data-item-custom3-options="
+      {{- range $i, $e := $.color.product.name -}}
+        {{- $option := index $e -}}
+        {{- if $i -}}| 
+        {{- end -}}
+        {{- $option -}}
+      {{- end -}}
+    "
+  {{ end }}
+  {{- with eq (len .color.product.name) 1 -}}
+    {{- range $check := $.color.product.name -}}
+      {{- if ne $check "" -}}
+        data-item-custom3-name="Product Color"
+        data-item-custom3-options="
+          {{- range $i, $e := $.color.product.name -}}
+            {{- $option := index $e -}}
+            {{- $option -}}
+          {{- end -}}
+        "
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  >
     Add to cart
   </a>
 </div>

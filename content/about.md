@@ -1,7 +1,7 @@
-+++
-title = "About Walk Royale"
-date = "2015-06-12"
-+++
+---
+date: 2015-06-12
+title: About Walk Royale
+---
 
 # The Walk Royale Story
 

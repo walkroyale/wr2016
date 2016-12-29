@@ -1,0 +1,41 @@
+id: '02'
+active: true
+brand_id: kurvykitten
+description: >-
+  Hug all the right curves and feel Purrrty in this slim fit, long sleeved gray
+  shirt.
+pdateadded: null
+price: 25
+prod_weight: ''
+title: Purrrty Longsleeved Raglan
+weight: 0
+url: /
+product_size:
+  - Small
+  - Medium
+  - Large
+  - X-Large
+  - 2X-Large
+  - 3X-Large
+  - 4X-Large
+color:
+  logo:
+    name: []
+    cid: []
+    images: []
+  product:
+    name:
+      - Purple Sleeve
+      - Pink Sleeve
+      - Blue Sleeve
+    cid:
+      - purple
+      - pink
+      - blue
+    images:
+      - >-
+        https://dato-images.imgix.net/124/1482765671-purrrtypurple-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+      - >-
+        https://dato-images.imgix.net/124/1482765703-purrrtypink-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+      - >-
+        https://dato-images.imgix.net/124/1482765740-purrrtyblue-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300

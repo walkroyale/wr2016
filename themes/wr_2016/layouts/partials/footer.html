@@ -1,6 +1,6 @@
 <footer>
 <!-- About -->
-  {{ with .Site.Params.intro.about }}
+  {{- with .Site.Params.intro -}}
     <section class="c-site-info">
       <h2 class="o-section-heading subheading">About</h2>
       <p>{{ . }}</p>
@@ -9,7 +9,7 @@
         <li class="button__bg-solid"><a href="/about" class="">Learn More</a></li>
       </ul>
     </section>
-  {{ end }}
+  {{- end -}} <!-- end with -->
   <small>
     <div class="copyright footer__1@lg u-space-30" data-layout="u-1@lg">
       {{ partial "copyright.html" . }}

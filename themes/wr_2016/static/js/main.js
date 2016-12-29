@@ -38,7 +38,31 @@ jQuery(document).ready(function(){
         flkty.select( index );
       });
     }
-  
+
+
+    var $slider = $('.t-product-image__slider').flickity();
+    var $cellWrapper = $('.product_opt__list');
+    var $cellButtons = $cellWrapper.find('li a');
+
+    function highlightCells() {
+      $cellButtons.filter('.is-selected').removeClass('is-selected');
+      
+      var flkty = $slider.data('flickity');
+
+      $cellButtons.eq( flkty.selectedIndex ).addClass('is-selected');
+
+      if ($cellButtons.hasClass('product')) {
+        var currentVal = $cellButtons.filter('.is-selected').text();
+        $('.product.is-selected').closest('.t-product-options').find('.snipcart-add-item').data('item-custom3-value', currentVal);
+      }
+      if ($cellButtons.hasClass('logo')) {
+        var currentVal = $cellButtons.filter('.is-selected').text();
+        $('.product.is-selected').closest('.t-product-options').find('.snipcart-add-item').data('item-custom2-value', currentVal);
+      }
+    }
+    
+    $slider.on( 'select.flickity', highlightCells );
+
 
   // item color
     var $colorSelect = $(".product_select.color.logo");

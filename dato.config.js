@@ -1,9 +1,9 @@
 module.exports = (dato, root) => {
-  root.createDataFile('site.toml', 'toml', dato.site.toMap());
+  root.createDataFile('site.yaml', 'yaml', dato.site.toMap());
 
   root.directory('data/products', dir => {
     dato.products.forEach((product, index) => {
-      dir.createDataFile(`${product.slug}.toml`, 'toml', {
+      dir.createDataFile(`${product.slug}.yaml`, 'yaml', {
         id: product.productId,
         active: product.activeProduct,
         brand_id: product.brands.brandId,
