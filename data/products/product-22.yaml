@@ -1,0 +1,71 @@
+active: true
+weight: 15
+pdateadded: 2017-01-07T00:00:00.000Z
+title: RENTABIGMAN Shield Tee
+id: '22'
+brand_id: rentabigman
+price: 40
+description: Forget the “S” and put this shield on your chest.
+prod_weight: null
+url: /
+items:
+  - name: Shirt
+    style: tee
+    style_opts:
+      - label: Shirt/Shield Color
+        colors:
+          - name: Black & Red
+            cid: black
+            images:
+              - image_name: Black and Red Shirt
+                img: >-
+                  https://dato-images.imgix.net/124/1483817707-rentabigman_opt-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large
+          - name: Blue & Orange
+            cid: blue
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large
+          - name: White & Red
+            cid: white
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large
+          - name: Gray & Red
+            cid: grayred
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large

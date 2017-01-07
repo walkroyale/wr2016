@@ -1,0 +1,32 @@
+active: true
+weight: 0
+pdateadded: 2017-01-07T00:00:00.000Z
+title: 'Kool Kats Hoodie '
+id: '20'
+brand_id: kurvykitten
+price: 35
+description: >-
+  Kool Kats Krave Kurvy Kittens! They really do! Especially in this core fleece
+  hooded pullover sweatshirt.
+prod_weight: null
+url: /
+items:
+  - name: Pullover Sweatshirt
+    style: Hooded
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: White
+            cid: white
+            images:
+              - image_name: Kool Kats Hoodie
+                img: >-
+                  https://dato-images.imgix.net/124/1483807241-dsc0804-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

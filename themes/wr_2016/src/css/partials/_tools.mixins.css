@@ -1,23 +1,23 @@
 /* ********** @section visibility ********** */
   /*Hide from both screenreaders and browsers: h5bp.com/u*/
   @define-mixin hidden {
-      display: none;
-      visibility: hidden;
+      display: none !important;
+      visibility: hidden !important;
   }
 
   @define-mixin shown {
-    display: block;
-    visibility: visible;
+    display: block !important;
+    visibility: visible !important;
   }
   /*Accessible Visibility – Hide only visually, but have it available for screenreaders: h5bp.com/v*/
   @define-mixin visuallyhidden {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
+      border: 0 !important;
+      clip: rect(0 0 0 0) !important;
+      height: 1px !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      position: absolute !important;
+      width: 1px !important;
   }
 /* @close visibility */

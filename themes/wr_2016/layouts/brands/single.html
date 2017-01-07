@@ -7,30 +7,37 @@
         {{- $brandid := $.Params.brand_id -}}
         {{- if and (eq .brand_id ($brandid)) (eq .active true ) -}}
           <div class="single-product
-            {{ if or (gt (len .color.product) 1) (gt (len .color.logo) 1) }}
-              o-slider-container
-            {{- end -}}
+            {{- range $index, $base := .items -}}
+              {{- range $index, $level1 := index $base "key" -}}
+                {{- range $index, $level2 := index $level1 "colors" -}}
+                  {{- with $level2.name -}}
+                    {{ with gt (len $level2.images) 1 }}
+                      o-slider-container
+                    {{ end }}
+                  {{- end -}}
+                {{- end -}}
+              {{- end -}}
+            {{- end -}} 
+          
           " style="">
             <div class="t-product-image__section">
-              <!-- check if there are multiple images of either the logo, or the product -->
-              {{- if or (gt (len .color.product) 1) (gt (len .color.logo) 1) -}}
-                {{- partial "_product-image_slider.html" . -}}
-              {{- end -}} <!-- end with multiple image -->
+              {{- partial "_product-image_slider.html" . -}}
             </div>  
             <div class="t-product-details">
               {{- partial "_product-info.html" . -}}
               <div class="t-product-options">
-                {{- partial "_product-color_logo.html" . -}}
-                {{- partial "_product-color_apparel.html" . -}}
+                {{- partial "_product-color.html" . -}}
                 {{- partial "_product_size.html" . -}}
                 {{- partial "_product_quantity.html" . -}}
-                {{- partial "_product_cart-button.html" . -}}
               </div>
+              {{- partial "_product_cart-button.html" . -}}
             </div>
           </div>
+          <!-- {{ partial "test.html" . }} -->
         {{- end -}} <!-- end brand selection -->
       {{- end -}} <!-- end range -->
     </div>
+
   </main>
 
 {{- partial "footer.html" . -}}

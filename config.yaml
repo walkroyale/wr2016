@@ -11,6 +11,7 @@ params:
   intro: "We are the conglomerate company of: Rentabigman & Kurvy Kitten clothing lines. We provide high quality apparel with specialization in plus sized clothing. Our sizes go up to 4XL on average some items go up 6XL."
   logo:  "logo"
   name:  "brand name"
+  pid: ""
   tagline:  "We are all Kings and Queens. Be that daily."
   wordmark:  "Walk Royale Clothing"
 
@@ -30,11 +31,11 @@ menu:
   main:
     - name: "About"
       url: "/about"
-      weight: 2
+      weight: 1
     - name: "Home"
       url: "/"
-      weight: 1
+      weight: 0
     - name: "Cart"
       url: "#"
-      weight: 3
+      weight: 2
 ...

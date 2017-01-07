@@ -1,0 +1,55 @@
+active: true
+weight: 11
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Kurvy Leggings
+id: 09
+brand_id: kurvykitten
+price: 40
+description: 'Be casual and sexy in the solid colored pants – they come in three colors. '
+prod_weight: null
+url: /
+items:
+  - name: pants
+    style: legging
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Black
+            cid: black
+            images:
+              - image_name: Black Leggings
+                img: >-
+                  https://dato-images.imgix.net/124/1483813984-terrikapants-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Green
+            cid: green
+            images:
+              - image_name: Black Leggings
+                img: >-
+                  https://dato-images.imgix.net/124/1483814038-terrikapants-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 4X-Large
+          - name: Red
+            cid: red
+            images:
+              - image_name: Black Leggings
+                img: >-
+                  https://dato-images.imgix.net/124/1483814088-terrikapants-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 4X-Large

@@ -1,0 +1,115 @@
+active: false
+weight: 17
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Kurvy Kitten Lounge Pants
+id: '03'
+brand_id: kurvykitten
+price: 30
+description: Comfortable lounge pants
+prod_weight: ''
+url: /
+items:
+  - name: pants
+    style: sweatpants
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Black
+            cid: black
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Gray
+            cid: gray
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Navy
+            cid: navy
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: White
+            cid: white
+            images:
+              - image_name: White Lounge Pants
+                img: >-
+                  https://dato-images.imgix.net/124/1483816814-loungepantsaqwht-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+              - image_name: White lounge pant
+                img: >-
+                  https://dato-images.imgix.net/124/1483817098-loungepantsblueorawht-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+      - label: Logo Color
+        colors:
+          - name: Aqua
+            cid: aqua
+            images:
+              - image_name: White pant with aqua logo
+                img: >-
+                  https://dato-images.imgix.net/124/1483816968-loungepantsaqwht-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Black
+            cid: black
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Pink
+            cid: pink
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Red
+            cid: red
+            images: []
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

@@ -1,0 +1,27 @@
+active: true
+weight: 9
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Button Down shirt
+id: '11'
+brand_id: kurvykitten
+price: 35
+description: 'Get this chic plus sized, long sleeved women’s dress shirt in black.'
+prod_weight: null
+url: /
+items:
+  - name: shirt
+    style: button down
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Black
+            cid: black
+            images:
+              - image_name: Women's dress shirt.
+                img: >-
+                  https://dato-images.imgix.net/124/1483813320-nykkishirt-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large

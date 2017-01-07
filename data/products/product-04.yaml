@@ -1,0 +1,58 @@
+active: false
+weight: 16
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Meeeow Active Wear
+id: '04'
+brand_id: kurvykitten
+price: 30
+description: 'Meowww, or should we say “Rawr” in this v-kneck tee with matching shorts.'
+prod_weight: null
+url: /
+items:
+  - name: Set
+    style: Tee and Shorts
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Pink Raspberry
+            cid: pinkraspberry
+            images:
+              - image_name: Pink Raspberry Short Set
+                img: >-
+                  https://dato-images.imgix.net/124/1483816358-meowww-raspberry-png?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Black
+            cid: black
+            images:
+              - image_name: Black Short Set
+                img: >-
+                  https://dato-images.imgix.net/124/1483816405-meowww-blk-wht-png?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: True Red
+            cid: red
+            images:
+              - image_name: True Red Short Set
+                img: >-
+                  https://dato-images.imgix.net/124/1483816455-meowww-true-red-png?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

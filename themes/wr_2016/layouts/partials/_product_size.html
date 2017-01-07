@@ -1,12 +1,21 @@
-{{- with .product_size -}}
-  <div class="product_opt product_size">
-    <label for="{{- $.brand_id -}}{{- $.id -}}_size">
-      Size: <br>
-      <select data-placeholder="Size" data-type="select" title ="Select Product Size" class="product_select size" id="{{- $.brand_id -}}{{- $.id -}}_size">
-        {{- range $index, $size := $.product_size -}}
-          <option class="{{- $size | urlize -}}" value="{{- index $.product_size $index -}}">{{- index $.product_size $index -}}</option>
-        {{- end -}} <!-- end size range -->
-      </select>
-    </label>
-  </div>
-{{- end -}} <!-- end with product sizes -->
+<!-- /// @group color option images /// -->
+{{- range $index, $base := .items -}}
+  {{- range $index, $level1 := index $base "style_opts" -}}
+    {{- range $index, $level2 := index $level1 "colors" -}}
+        {{ with $level2.name }}
+          <div class="product_opt product_size {{ index $level2.cid }}">
+            <label for="{{- $.brand_id -}}{{- $.id -}}_size">
+              Size:
+              <select data-placeholder="Size" data-type="select" title ="Select Product Size" class="product_select size" id="{{- $.brand_id -}}{{- $.id -}}_size">
+                {{- range $index, $size := $level2.sizes -}}
+                  <option class="{{- $size | urlize -}}" value="{{- index $size -}}">{{- index $size -}}</option>
+                {{- end -}} <!-- end size range -->
+              </select>
+            </label>
+          </div>
+        {{ end }}
+        
+    {{- end -}} <!-- end level2 "colors" -->
+  {{- end -}} <!-- end level1 "style_opts" -->
+{{- end -}} <!-- end range base -->
+<!-- /// @end color option images /// -->

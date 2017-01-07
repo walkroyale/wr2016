@@ -1,0 +1,63 @@
+active: true
+weight: 7
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Super Kurvy
+id: '13'
+brand_id: kurvykitten
+price: 20
+description: >-
+  Ladies will leap tall, dark & handsome in a single bound with this 60/40 bling
+  tee. Get all three colors today! 
+prod_weight: null
+url: /
+items:
+  - name: shirt
+    style: tee
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Berry & Gold
+            cid: berrygold
+            images:
+              - image_name: Berry & Gold Tee
+                img: >-
+                  https://dato-images.imgix.net/124/1483812474-img_3150-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Gray & Black
+            cid: grayblack
+            images:
+              - image_name: Berry & Gold Tee
+                img: >-
+                  https://dato-images.imgix.net/124/1483812531-img_3150-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: White & Gold
+            cid: whitegold
+            images:
+              - image_name: Berry & Gold Tee
+                img: >-
+                  https://dato-images.imgix.net/124/1483812579-img_3150-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

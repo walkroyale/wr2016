@@ -1,0 +1,74 @@
+active: true
+weight: 1
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Kurvy Kitten Hoodie
+id: '19'
+brand_id: kurvykitten
+price: 35
+description: >-
+  These white hoodies are just in time for winter. In sizes up to 4XL, choose
+  your from four of our best selling logo colors today! 
+prod_weight: null
+url: /
+items:
+  - name: Pullover Sweatshirt
+    style: Hooded
+    style_opts:
+      - label: Logo Color
+        colors:
+          - name: Black & Red
+            cid: blackred
+            images:
+              - image_name: Black & Red Logo Hoodie
+                img: >-
+                  https://dato-images.imgix.net/124/1483809400-hoodie-white-red-blackr-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Orange & Blue
+            cid: orangeblue
+            images:
+              - image_name: Orange & Blue
+                img: >-
+                  https://dato-images.imgix.net/124/1483809470-hoodie-white-orng-wht-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Red & Black
+            cid: redblack
+            images:
+              - image_name: Rad & Black Logo Hoodie
+                img: >-
+                  https://dato-images.imgix.net/124/1483809532-dsc0853-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Silver & Purple
+            cid: silverpurple
+            images:
+              - image_name: Silver & Purple
+                img: >-
+                  https://dato-images.imgix.net/124/1483809579-hoodie-white-prpl-slvr-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

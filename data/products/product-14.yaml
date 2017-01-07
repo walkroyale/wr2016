@@ -1,0 +1,33 @@
+active: true
+weight: 6
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Motto Tank
+id: '14'
+brand_id: kurvykitten
+price: 15
+description: >-
+  “Self-Reflection” is Purrrfection – at least that’s what this shirt says! Let
+  your motto shine in this purfect Tri™ Racerback Tank. 
+prod_weight: null
+url: /
+items:
+  - name: shirt
+    style: racerback tank
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Purple
+            cid: purple
+            images:
+              - image_name: Motto Tank
+                img: >-
+                  https://dato-images.imgix.net/124/1483812087-yvonnetank-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

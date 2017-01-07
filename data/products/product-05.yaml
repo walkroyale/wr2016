@@ -1,0 +1,49 @@
+active: false
+weight: 15
+pdateadded: 2017-01-07T00:00:00.000Z
+title: “Kan U Handle the Kurv” Tee
+id: '05'
+brand_id: kurvykitten
+price: 25
+description: 'This coral, gold flecked top comes in two figure flattering styles! '
+prod_weight: null
+url: /
+items:
+  - name: Shirt
+    style: Looped Back Tank
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Coral
+            cid: coral
+            images:
+              - image_name: Coral Tank Top
+                img: >-
+                  https://dato-images.imgix.net/124/1483815865-handle-kurvykitttank-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+  - name: Shirt
+    style: V-Knecked Tee
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Coral
+            cid: coral
+            images:
+              - image_name: Coral V-Knecked Tee
+                img: >-
+                  https://dato-images.imgix.net/124/1483815994-handle-kurvykittee-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

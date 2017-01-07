@@ -1,0 +1,54 @@
+# boolean: toggle true/false to have the product show up on the site
+active: true
+# sorting
+weight: 0
+pdateadded:
+# kurvykitten, or rentabigman at the time of this writing
+title: Title for the site page
+slug:
+id:
+brand_id:
+# A unique identifier (started with numbers at the time of publishing) a good idea is to have this number in the file name - it won't show up on the site, but will help keep track of what number you're on.
+price: 25
+description: >-
+  Product description.
+# shipping
+prod_weight: ''
+url: /
+
+# repeatable product options by item-type.  Ex: dress, top, bottom, etc.
+items:
+  # parts of an outfit
+  - name:
+    # If there aren't multiple styles: default
+    style:
+      style_opts:
+        # What to select colors for? Ex: product|logo
+        - label:
+          colors:
+            # Black|Blue & Orange
+            - name: 
+              # black|blueorange
+              cid: 
+              #optional
+              images:
+                - image_name:
+                  img: 
+              # for price adjustment use Size[+/-#.##]
+              sizes:
+                # options at the time of this writing
+                - X-Small
+                - Small
+                - Medium
+                - Large
+                - X-Large
+                - 2X-Large
+                - 3X-Large
+                - 4X-Large
+                - 5X-Large
+                - 6X-Large
+                - 2X-Large[+5.00]
+                - 3X-Large[+5.00]
+                - 4X-Large[+5.00]
+                - 5X-Large[+5.00]
+                - 6X-Large[+5.00]

@@ -1,0 +1,34 @@
+active: true
+weight: 6
+pdateadded: 2017-01-07T00:00:00.000Z
+title: All Big Long Sleeved Raglan
+id: '26'
+brand_id: rentabigman
+price: 45
+description: >-
+  Take your style to the major leagues with this white and blue long-sleeved
+  Raglan.
+prod_weight: null
+url: /
+items:
+  - name: Shirt
+    style: Raglan
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: White w Navy Sleeves
+            cid: navy
+            images:
+              - image_name: White shirt w navy sleeves
+                img: >-
+                  https://dato-images.imgix.net/124/1483819046-all_big_baseball_logo_opt-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large

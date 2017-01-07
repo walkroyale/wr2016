@@ -1,25 +1,31 @@
-<!-- /// @group product color option images /// -->
-  {{- with gt (len .color.product.images) 1 -}}
-    <div class="t-product-image__slider product_slider"> <!-- Slider main container -->
-      <!-- //iterate over the image slider -->
-        {{- range $index, $slice := $.color.product.images -}}
-          <div class="t-product-image__cell">
-            <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $slice }}" />
-          </div>
-        {{- end -}} <!-- end range -->
-    </div>
-  {{- end -}} <!-- end product color slider -->
-<!-- /// @end product color option images /// -->
+<!-- /// @group color option images /// -->
+  {{- range $index, $base := .items -}}
+    {{- range $index, $level1 := index $base "style_opts" -}}
+      {{- range $index, $level2 := index $level1 "colors" -}}
+        <!-- separate by name -->
+          {{- with $level2.name -}}
+            {{- with gt (len $level2.images) 1 -}}
+              <div class="t-product-image__slider product_slider {{ index $level2.cid }}
+              "> <!-- Slider main container -->
+                {{- range $index, $level3 := index $level2 "images" -}}
+                  <!-- //iterate over the images in slider -->
+                    <div class="t-product-image__cell">
+                      <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ $level3.img }}" />
+                    </div>
+                {{ end }} <!-- end img range -->
+              </div> <!-- end slider container -->
+            {{- end -}} <!-- end with multiple images -->
+            {{- with eq (len $level2.images) 1 -}}
+              <div class="t-product-image single_image {{ index $level2.cid }}"> <!-- Slider main container -->
+              {{ $level3 := $level2.images }}
+              {{ with (index $level3 0).img }}
+                <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ . }}" />
+                {{ end }}
+              </div>
+            {{- end -}} <!-- end with single image -->
+          {{- end -}} <!-- end color name separation(with) -->
 
-<!-- /// @group logo color option images /// -->
-  {{- with gt (len .color.logo.images) 1 -}}
-    <div class="t-product-image__slider logo_slider"> <!-- Slider main container -->
-      <!-- //iterate over the image slider -->
-      {{- range $index, $slice := $.color.logo.images -}}
-        <div class="t-product-image__cell">
-          <img class="t-product-image__cell-image" data-index="{{- $index -}}" height="auto" width="300" src="{{ index $slice }}" />
-        </div>
-      {{- end -}} <!-- end color range -->
-    </div>
-  {{- end -}} <!-- end logo color slider -->
-<!-- /// @end logo color option images /// -->
+      {{- end -}} <!-- end level2 "colors" -->
+    {{- end -}} <!-- end level1 "key" -->
+  {{- end -}} <!-- end range base -->
+<!-- /// @end color option images /// -->

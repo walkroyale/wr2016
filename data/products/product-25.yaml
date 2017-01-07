@@ -1,0 +1,32 @@
+active: true
+weight: 7
+pdateadded: 2017-01-07T00:00:00.000Z
+title: 'ALL BIG, ALL GOOD Tee'
+id: '25'
+brand_id: rentabigman
+price: 35
+description: It is truly ALL GOOD in this vivid turquoise tee.
+prod_weight: null
+url: /
+items:
+  - name: Shirt
+    style: tee
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Turquoise
+            cid: turquoise
+            images:
+              - image_name: Turquoise Tee
+                img: >-
+                  https://dato-images.imgix.net/124/1483818822-all_big_all_good_opt-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large

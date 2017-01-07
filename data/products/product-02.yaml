@@ -1,41 +1,64 @@
-id: '02'
 active: true
+weight: 20
+pdateadded: 2017-01-01T00:00:00.000Z
+title: Purrrty Longsleeved Raglan
+id: '02'
 brand_id: kurvykitten
+price: 25
 description: >-
   Hug all the right curves and feel Purrrty in this slim fit, long sleeved gray
   shirt.
-pdateadded: null
-price: 25
-prod_weight: ''
-title: Purrrty Longsleeved Raglan
-weight: 0
+prod_weight: null
 url: /
-product_size:
-  - Small
-  - Medium
-  - Large
-  - X-Large
-  - 2X-Large
-  - 3X-Large
-  - 4X-Large
-color:
-  logo:
-    name: []
-    cid: []
-    images: []
-  product:
-    name:
-      - Purple Sleeve
-      - Pink Sleeve
-      - Blue Sleeve
-    cid:
-      - purple
-      - pink
-      - blue
-    images:
-      - >-
-        https://dato-images.imgix.net/124/1482765671-purrrtypurple-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
-      - >-
-        https://dato-images.imgix.net/124/1482765703-purrrtypink-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
-      - >-
-        https://dato-images.imgix.net/124/1482765740-purrrtyblue-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+items:
+  - name: Shirt
+    style: Raglan
+    style_opts:
+      - label: Product Sleeve
+        colors:
+          - name: Purple
+            cid: purple
+            images:
+              - image_name: Purrrty Purple Raglan
+                img: >-
+                  https://dato-images.imgix.net/124/1483289547-purrrtypurple-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+              - image_name: Test Image
+                img: >-
+                  https://dato-images.imgix.net/124/1483310786-purrrtypink-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Pink
+            cid: pink
+            images:
+              - image_name: Purrrty Pink Raglan
+                img: >-
+                  https://dato-images.imgix.net/124/1483290286-purrrtypink-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Blue
+            cid: blue
+            images:
+              - image_name: Purrrty Blue Raglan
+                img: >-
+                  https://dato-images.imgix.net/124/1483290414-purrrtyblue-raglan-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large

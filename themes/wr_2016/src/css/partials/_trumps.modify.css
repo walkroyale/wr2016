@@ -1,3 +1,6 @@
 .snip-layout .snip-ico {
   z-index: 1000;
 }
+.hidden {
+ @mixin hidden; 
+}

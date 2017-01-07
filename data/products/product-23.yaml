@@ -1,0 +1,32 @@
+active: false
+weight: 10
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Big Mind Long Sleeve Raglan
+id: '23'
+brand_id: rentabigman
+price: 45
+description: 'Big Mind, Big Heart and BIG Everything Else Raglan sleeved shirt.'
+prod_weight: null
+url: /
+items:
+  - name: Shirt
+    style: Raglan
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: White w/ Navy Sleeves
+            cid: navy
+            images:
+              - image_name: White shirt w Navy Sleeves
+                img: >-
+                  https://dato-images.imgix.net/124/1483818347-big_mind_big_heart_opt-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+              - 5X-Large
+              - 6X-Large

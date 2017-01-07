@@ -1,63 +1,38 @@
+
+
+
+
+
 <div class="add-to-cart">
   <a href="#"
   class="snipcart-add-item"
   data-item-id="{{ .id }}"
   data-item-name="{{ .title }}"
+  data-item-description=""
   data-item-image=""
   data-item-price="{{ .price }}"
   data-item-quantity = "1"
   data-item-weight="{{ .weight }}"
   data-item-url="{{ .url }}"
-  data-item-custom1-name="Size"
-  data-item-custom1-options="{{ delimit .product_size "|" }}"
-  {{- with gt (len .color.logo.name) 1 -}}
-    data-item-custom2-name="Logo Color"
-    data-item-custom2-options="
-      {{- range $i, $e := $.color.logo.name -}}
-        {{- $option := index $e -}}
-        {{- if $i -}}| 
-        {{- end -}}
-        {{- $option -}}
-      {{- end -}}
-    "
-  {{ end }}
-  {{- with eq (len .color.logo.name) 1 -}}
-    {{- range $check := $.color.logo.name -}}
-      {{ if ne $check "" }}
-        data-item-custom2-name="Logo Color"
-        data-item-custom2-options="
-          {{- range $i, $e := $.color.logo.name -}}
-            {{- $option := index $e -}}
-            {{- $option -}}
-          {{- end -}}
-        "
-      {{- end -}}
-    {{- end -}}
-  {{ end }}
-  {{- with gt (len .color.product.name) 1 -}}
-    data-item-custom3-name="Product Color"
-    data-item-custom3-options="
-      {{- range $i, $e := $.color.product.name -}}
-        {{- $option := index $e -}}
-        {{- if $i -}}| 
-        {{- end -}}
-        {{- $option -}}
-      {{- end -}}
-    "
-  {{ end }}
-  {{- with eq (len .color.product.name) 1 -}}
-    {{- range $check := $.color.product.name -}}
-      {{- if ne $check "" -}}
-        data-item-custom3-name="Product Color"
-        data-item-custom3-options="
-          {{- range $i, $e := $.color.product.name -}}
-            {{- $option := index $e -}}
-            {{- $option -}}
-          {{- end -}}
-        "
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
+
+{{ $counter := len .items }}
+{{- range $index, $map := .items -}}
+
+  {{ if and (ge $counter 1) (le $counter 5) }}
+    {{- range $newindex, $val := index $map "style_opts" -}}
+      {{- range $i, $e := $.items -}}
+      data-item-custom{{- $index -}}-name="Item"
+      data-item-custom{{- $index -}}-value="
+          {{- $opt := index $e "name" -}}
+          {{- $opt -}}
+      "
+      data-item-custom{{- $index -}}-type="readonly"
+      {{- end -}} {{- "<!-- end option range -->" | safeHTML -}}
+    {{- end -}} {{- "<!-- end inner counter range -->" | safeHTML -}}
+  {{- end -}} {{- "<!-- end counter conditional -->" | safeHTML -}}
+
+{{- end -}} {{- "<!-- end item range -->" | safeHTML -}}
+
   >
     Add to cart
   </a>

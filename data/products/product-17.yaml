@@ -1,0 +1,78 @@
+active: true
+weight: 3
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Strappy Dress
+id: '17'
+brand_id: kurvykitten
+price: 25
+description: >-
+  Enjoy summertime style anytime in this junior fit, strappy dress that can
+  double as a cover-up. 
+prod_weight: null
+url: /
+items:
+  - name: dress
+    style: junior fit
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Aquamarine
+            cid: aquamarine
+            images:
+              - image_name: Aquamarine Strappy Dress
+                img: >-
+                  https://dato-images.imgix.net/124/1483811195-nakaylatankdress-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Black
+            cid: black
+            images:
+              - image_name: Aquamarine Strappy Dress
+                img: >-
+                  https://dato-images.imgix.net/124/1483811265-nakaylatankdress-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Gray
+            cid: gray
+            images:
+              - image_name: Aquamarine Strappy Dress
+                img: >-
+                  https://dato-images.imgix.net/124/1483811347-nakaylatankdress-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: White
+            cid: white
+            images:
+              - image_name: Aquamarine Strappy Dress
+                img: >-
+                  https://dato-images.imgix.net/124/1483811311-nakaylatankdress-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - X-Small
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large

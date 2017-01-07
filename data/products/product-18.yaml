@@ -1,0 +1,74 @@
+active: true
+weight: 2
+pdateadded: 2017-01-07T00:00:00.000Z
+title: Camoflage Hoodie
+id: '18'
+brand_id: kurvykitten
+price: 40
+description: >-
+  Just in time for the new year, get this core fleece camouflage pullover hooded
+  sweatshirt in four colors. 
+prod_weight: ''
+url: /
+items:
+  - name: Pullover Sweatshirt
+    style: Hooded
+    style_opts:
+      - label: Product Color
+        colors:
+          - name: Pink
+            cid: pink
+            images:
+              - image_name: Pink Hooded Sweatshirt
+                img: >-
+                  https://dato-images.imgix.net/124/1483809866-dsc0489-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Woodland Blue
+            cid: blue
+            images:
+              - image_name: Woodland blue Hooded Sweatshirt
+                img: >-
+                  https://dato-images.imgix.net/124/1483810015-dsc0784-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Military
+            cid: military
+            images:
+              - image_name: Military Hooded Sweatshirt
+                img: >-
+                  https://dato-images.imgix.net/124/1483810101-dsc0908-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
+          - name: Desert
+            cid: desert
+            images:
+              - image_name: Desert Hooded Sweatshirt
+                img: >-
+                  https://dato-images.imgix.net/124/1483810457-dsc0908-jpg?auto=enhance%2C%20compress&ch=DPR%2CWidth&fit=crop&w=300
+            sizes:
+              - Small
+              - Medium
+              - Large
+              - X-Large
+              - 2X-Large
+              - 3X-Large
+              - 4X-Large
