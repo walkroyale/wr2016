@@ -1,0 +1,24 @@
+<!-- /// @group color option images /// -->
+  {{- range $index, $base := .items -}}
+    {{- range $index, $level1 := index $base "style_opts" -}}
+      <div class="product_opt color&nbsp; {{- lower $level1.label | urlize -}}">
+        <label for="{{- $.brand_id -}}{{- $.id -}}_color">
+          {{- $level1.label -}}:<br>
+        </label>
+        <ul class="product_opt__list">
+        {{- with  gt (len $level1.colors) 1 -}}
+          {{- range $index, $level2 := index $level1 "colors" -}}
+            {{- $color := $level2.cid -}}
+            <li class="product_opt__list-item">
+              <a class="product_opt__list-item--target product_select color logo {{ $color }} {{ if eq $index 0 }}is-selected{{ end }}" href="#" title="{{- index $level2.name -}}">
+                {{- index $level2.name -}}
+              </a>
+            </li>
+            
+          {{- end -}} <!-- end level2 "colors" -->
+        {{- end -}} <!-- with multiple colors -->
+        </ul>
+      </div> <!-- end product_opt -->
+    {{- end -}} <!-- end level1 "style_opts" -->
+  {{- end -}} <!-- end range base -->
+<!-- /// @end color option images /// -->
